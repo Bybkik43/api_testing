@@ -1,7 +1,5 @@
-import self as self
-
-from api.client import Client
 import json
+from api.client import Client
 
 
 class Api(Client):
