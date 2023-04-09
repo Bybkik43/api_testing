@@ -10,7 +10,6 @@ class Api(Client):
         url = self.BASE_URL + self.USERS + "?page=2"
         return self.get(url)
 api = Api()
-
     def single_user_not_found(self):
         url = self.BASE_URL + self.USERS + '/23'
         return self.get(url)

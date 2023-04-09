@@ -1,7 +1,6 @@
 import requests
 from http import HTTPStatus
-import api.questions_api
-
+import api.questions_api import api
 
 def registration():
     url = 'https://reqres.in/api/register'

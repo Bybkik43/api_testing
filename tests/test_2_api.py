@@ -13,7 +13,6 @@ def test_list_users():
 
 def single_user_not_found():
     res = api.single_user_not_found()
-
     assert res.status_code == HTTPStatus.NOT_FOUND
     Assert.validate_schema(res.json())
 
@@ -37,5 +36,4 @@ def single_user():
             "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
         }
     }
-
 assert example == res_body
